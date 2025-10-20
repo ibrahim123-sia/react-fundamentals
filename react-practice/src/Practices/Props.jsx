@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
 
-const Props = ({name,age}) => {
+const Props = ({ name, age }) => {
   return (
     <div>
-        <h1>My name is {name} and i am {age} year old</h1>
+      <h1>
+        My name is {name} and i am {age} year old
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default Props
+export default Props;

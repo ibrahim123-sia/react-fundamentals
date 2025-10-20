@@ -2,7 +2,7 @@ import React from "react";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import Component from "../src/Practices/Component.jsx";
 import Props from "../src/Practices/Props.jsx";
-
+import EventHandling from "../src/Practices/EventHandling.jsx";
 
 export default function App() {
   return (
@@ -10,10 +10,9 @@ export default function App() {
       <BrowserRouter>
         <Routes>
           {/* <Route path="/" element={<Component />} /> */}
-          <Route path="/" element={<Props name='Syed Ibrahim Ali' age={22}/>}/>
-          
+          {/* <Route path="/" element={<Props name='Syed Ibrahim Ali' age={22}/>}/> */}
+          <Route path="/" element={<EventHandling />} />
         </Routes>
-        
       </BrowserRouter>
     </>
   );
