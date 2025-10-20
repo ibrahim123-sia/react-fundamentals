@@ -1,7 +1,20 @@
+import React from "react";
+import { Route, Routes, BrowserRouter } from "react-router-dom";
+import Component from "../src/Practices/Component.jsx";
+import Props from "../src/Practices/Props.jsx";
+
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
-  )
+    <>
+      <BrowserRouter>
+        <Routes>
+          {/* <Route path="/" element={<Component />} /> */}
+          <Route path="/" element={<Props name='Syed Ibrahim Ali' age={22}/>}/>
+          
+        </Routes>
+        
+      </BrowserRouter>
+    </>
+  );
 }
