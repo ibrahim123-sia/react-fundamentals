@@ -5,6 +5,8 @@ import Props from "../src/Practices/Props.jsx";
 import EventHandling from "../src/Practices/EventHandling.jsx";
 import ConditionalRendering from "../src/Practices/ConditionalRendering.jsx";
 import Stopwatch from "../src/Practices/Stopwatch.jsx";
+import WeatherFetcher from "../src/Practices/weatherFetcher.jsx";
+
 export default function App() {
   return (
     <>
@@ -14,7 +16,8 @@ export default function App() {
           {/* <Route path="/" element={<Props name='Syed Ibrahim Ali' age={22}/>}/> */}
           {/* <Route path="/" element={<EventHandling />} /> */}
           {/* <Route path="/" element={<ConditionalRendering/>}/> */}
-          <Route path="/" element={<Stopwatch/>}/>
+          {/* <Route path="/" element={<Stopwatch/>}/> */}
+          <Route path="/" element={<WeatherFetcher/>}/>
         </Routes>
       </BrowserRouter>
     </>
