@@ -6,7 +6,7 @@ import EventHandling from "./EventHandling";
 import ConditionalRendering from "./ConditionalRendering";
 import Stopwatch from "./Stopwatch";
 import WeatherFetcher from "./weatherFetcher";
-
+import DynamicRouting from "./DynamicRouting";
 const ReactRouter = () => {
   return (
     <div className="justify-center items-center">
@@ -30,6 +30,9 @@ const ReactRouter = () => {
           </li>
           <li>
             <Link to="/WeatherFetcher">Weather Fetcher</Link>
+          </li>
+          <li>
+            <Link to="/DynamicRouting">Dynamic Routing</Link>
           </li>
         </ul>
       </nav>

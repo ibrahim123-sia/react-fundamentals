@@ -7,6 +7,7 @@ import ConditionalRendering from "../src/Practices/ConditionalRendering.jsx";
 import Stopwatch from "../src/Practices/Stopwatch.jsx";
 import WeatherFetcher from "../src/Practices/weatherFetcher.jsx";
 import ReactRouter from "../src/Practices/ReactRouter.jsx";
+import DynamicRouting from "./Practices/DynamicRouting.jsx";
 export default function App() {
   return (
     <>
@@ -19,6 +20,7 @@ export default function App() {
           <Route path="/ConditionalRendering" element={<ConditionalRendering/>}/>
           <Route path="/Stopwatch" element={<Stopwatch/>}/>
           <Route path="/WeatherFetcher" element={<WeatherFetcher/>}/>
+          <Route path="/DynamicRouting/:id" element={<DynamicRouting/>}/>
         </Routes>
       </BrowserRouter>
     </>
