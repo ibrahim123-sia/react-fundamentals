@@ -6,18 +6,19 @@ import EventHandling from "../src/Practices/EventHandling.jsx";
 import ConditionalRendering from "../src/Practices/ConditionalRendering.jsx";
 import Stopwatch from "../src/Practices/Stopwatch.jsx";
 import WeatherFetcher from "../src/Practices/weatherFetcher.jsx";
-
+import ReactRouter from "../src/Practices/ReactRouter.jsx";
 export default function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          {/* <Route path="/" element={<Component />} /> */}
-          {/* <Route path="/" element={<Props name='Syed Ibrahim Ali' age={22}/>}/> */}
-          {/* <Route path="/" element={<EventHandling />} /> */}
-          {/* <Route path="/" element={<ConditionalRendering/>}/> */}
-          {/* <Route path="/" element={<Stopwatch/>}/> */}
-          <Route path="/" element={<WeatherFetcher/>}/>
+          <Route path="/" element={<ReactRouter />} />
+          <Route path="/Component" element={<Component />} />
+          <Route path="/Probs" element={<Props name='Syed Ibrahim Ali' age={22}/>}/>
+          <Route path="/EventHandling" element={<EventHandling />} />
+          <Route path="/ConditionalRendering" element={<ConditionalRendering/>}/>
+          <Route path="/Stopwatch" element={<Stopwatch/>}/>
+          <Route path="/WeatherFetcher" element={<WeatherFetcher/>}/>
         </Routes>
       </BrowserRouter>
     </>
