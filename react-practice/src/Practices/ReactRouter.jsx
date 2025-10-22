@@ -34,6 +34,7 @@ const ReactRouter = () => {
           <li>
             <Link to="/DynamicRouting">Dynamic Routing</Link>
           </li>
+          <li><Link to='/Counter'>Counter</Link></li>
         </ul>
       </nav>
     </div>
